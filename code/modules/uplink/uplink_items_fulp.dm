@@ -6,3 +6,11 @@
 	cost = 8
 	restricted_roles = list("Curator")
 	limited_stock = 1 //for testing at least
+
+/datum/uplink_item/role_restricted/zoomer_book
+	name = "Zoomer Book"
+	desc = "A one use book that gives you the ability to learn the secret yeet technique mastered by tween of the early 3rd millenium. This will allow you to increase your throw damage, increasing with how loud you can scream it."
+	item = /obj/item/storage/box/syndie_kit/origami_bundle
+	cost = 7
+	restricted_roles = list("Assistant", "Bartender", "Botanist", "Chaplain", "Clown", "Cook", "Curator", "Janitor", "Mime")
+	limited_stock = 1 //for testing at least
