@@ -112,6 +112,35 @@
 	active = FALSE
 	UpdateButtonIcon()
 
+//Beggining of test
+/obj/item/book/granter/action/yeet
+	granted_action = /datum/action/innate/yeet
+	name = "Zoomer Book"
+	desc = "You feel compelled to throw this book.."
+	icon_state = "origamibook"	//Need a new Icon
+	actionname = "yeet"
+	oneuse = TRUE
+	remarks = list("Test Remark One", "Test Remark two")	//Need a remarks list
+
+/datum/action/innate/yeet
+	name = "Power Throwing"
+	desc = "Toggles your ability to throw with Zoomer force."
+	button_icon_state = "origami_off"	//Need a new Icon
+	check_flags = NONE
+
+/datum/action/innate/yeet/Activate()
+	to_chat(owner, "<span class='notice'>You will now throw with Zoomer force.</span>")
+	button_icon_state = "origami_on"	//Need a new Icon
+	active = TRUE
+	UpdateButtonIcon()
+
+/datum/action/innate/yeet/Deactivate()
+	to_chat(owner, "<span class='notice'>You will no longer throw with Zoomer force.</span>")
+	button_icon_state = "origami_off"	//Need a new Icon
+	active = FALSE
+	UpdateButtonIcon()
+//End of test
+
 ///SPELLS///
 
 /obj/item/book/granter/spell

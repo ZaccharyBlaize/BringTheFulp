@@ -545,3 +545,9 @@
 /obj/item/storage/box/syndie_kit/signaler/PopulateContents()
 	for(var/i in 1 to 6)
 		new /obj/item/assembly/signaler(src)
+
+
+/obj/item/storage/box/syndie_kit/origami_bundle/PopulateContents()
+	new /obj/item/book/granter/action/yeet(src)
+	for(var/i in 1 to 5)
+		new /obj/item/paper(src)
